@@ -22,7 +22,7 @@ export default function Beranda() {
             Namo Tassa Bhagavato Arahato Sammāsambuddhassa
           </p>
           <p className="text-sm md:text-base">
-            Terpujilah Sang Bhagava Yang Maha Pengasih, Maha Suci dan Maha Bijaksana.
+            Terpujilah Sang Bhagava Yang Maha Suci, Yang telah mencapai Penerangan Sempurna.
           </p>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight max-w-3xl">
             Menumbuhkan Kebajikan, Menjalani Kehidupan yang Bermakna
