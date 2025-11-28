@@ -18,7 +18,10 @@ export const metadata: Metadata = {
   description: "Yayasan Vihara Buddha Dharma Citaviriyo adalah lembaga keagamaan Buddhis yang menyelenggarakan kegiatan puja bakti, pendidikan Dhamma, dan pelayanan sosial bagi umat.",
   keywords: ["Vihara Buddha Dharma Citaviriyo", "Yayasan Vihara", "VBDC", "vihara buddhis", "kegiatan keagamaan Buddhis","pendidikan Dhamma", "donasi yayasan"],
   authors: [{ name: "Yayasan Vihara Buddha Dharma Citaviriyo"  }],
-  
+  icons: {
+  icon: "/vbdc-logo.PNG",
+},
+
     
   
   openGraph: {
