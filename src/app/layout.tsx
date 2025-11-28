@@ -14,24 +14,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
-  keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
-  authors: [{ name: "Z.ai Team" }],
-  icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
-  },
+  title: "Yayasan Vihara Buddha Dharma Citaviriyo (VBDC)",
+  description: "Yayasan Vihara Buddha Dharma Citaviriyo adalah lembaga keagamaan Buddhis yang menyelenggarakan kegiatan puja bakti, pendidikan Dhamma, dan pelayanan sosial bagi umat.",
+  keywords: ["Vihara Buddha Dharma Citaviriyo", "Yayasan Vihara", "VBDC", "vihara buddhis", "kegiatan keagamaan Buddhis","pendidikan Dhamma", "donasi yayasan"],
+  authors: [{ name: "Yayasan Vihara Buddha Dharma Citaviriyo"  }],
+  
+    
+  
   openGraph: {
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
-    url: "https://chat.z.ai",
-    siteName: "Z.ai",
+    title: "Yayasan Vihara Buddha Dharma Citaviriyo (VBDC)",
+    description: "Informasi vihara, kegiatan keagamaan Buddhis, pendidikan Dhamma, dan program pelayanan sosial Yayasan Vihara Buddha Dharma Citaviriyo.",
+    url: "https://vbdc.or.id",
+    siteName: "VBDC",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
+    title: "Yayasan Vihara Buddha Dharma Citaviriyo (VBDC)",
+    description: "Website resmi Yayasan Vihara Buddha Dharma Citaviriyo berisi jadwal puja bakti, kegiatan vihara, dan informasi layanan umat.",
   },
 };
 
