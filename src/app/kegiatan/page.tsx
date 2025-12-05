@@ -6,37 +6,37 @@ export default function Kegiatan() {
     {
       title: 'Waisak Puja',
       description: 'Peringatan suci kelahiran, pencerahan, dan parinibbāna Buddha Gautama yang diperingati setiap tahun dengan penuh khidmat.',
-      image: 'https://z-cdn-media.chatglm.cn/files/564e0350-d79a-4bd5-83b7-bdd1ce845d55_waisak.jpg?auth_key=1864058688-f419dfd080934447aecc8633418c08ee-0-891e3425e1ff599df7160d8e435e90ad'
+      image: '/activities/waisak.jpg'
     },
     {
       title: 'Kathina',
       description: 'Upacara suci pemberian jubah Kathina kepada para bhikkhu sebagai bentuk dana dan penghormatan kepada Sangha.',
-      image: 'https://z-cdn-media.chatglm.cn/files/27600308-fdea-4b16-a9fc-1de2903f308c_kathina.jpg?auth_key=1864058688-dede204a4fce4d0da516e8d2c79de412-0-fc76203aa0578bf383a416125201f964'
+      image: '/activities/kathina.jpg'
     },
     {
       title: 'Pattidana',
       description: 'Upacara pemberian sumbangan kepada para bhikkhu sebagai bentuk dukungan terhadap kehidupan spiritual.',
-      image: 'https://z-cdn-media.chatglm.cn/files/daac102d-3b1d-4f43-8583-fe77535ed0c6_Pattidana.jpg?auth_key=1864058688-08d7e8bc908f4be2926762a241c1bbb2-0-8b085fd99e1b80d00a5298769db711d1'
+      image: '/activities/Pattidana.jpg'
     },
     {
       title: 'Fang Shen',
       description: 'Ritual pelepasan makhluk hidup sebagai bentuk pengamalan kasih sayang dan kebaikan universal.',
-      image: 'https://z-cdn-media.chatglm.cn/files/e2098164-be4d-4773-ba63-f99d8e56acd8_FangShen.jpg?auth_key=1864058688-c00b1fac57384285975b55f0699d7dfa-0-5dc9a87bcbd407a393209d00c8c1218b'
+      image: '/activities/FangShen.jpg'
     },
     {
       title: 'Cheng Beng',
       description: 'Tradisi menghormati leluhur sebagai bentuk bakti dan penghargaan kepada para pendahulu.',
-      image: 'https://z-cdn-media.chatglm.cn/files/31241e6a-4b54-4a21-b4f8-1094ab576648_Cheng%20beng.jpg?auth_key=1864058688-83e0c89df5ad49e9bb82ec4d302ff7da-0-4f49b8f0dc7e02cadff2b967f7919381'
+      image: '/activities/Chengbeng.jpg'
     },
     {
       title: 'Bakti Sosial',
       description: 'Kegiatan sosial seperti donor darah, bantuan kepada masyarakat yang membutuhkan, dan kegiatan kemanusiaan.',
-      image: 'https://z-cdn-media.chatglm.cn/files/e4d4cf19-43a5-494c-a39a-9c6c5ace3eb9_baksos.jpg?auth_key=1864058688-8eb3b96dfd134cb3941feac2e32968d7-0-468d92f8c1b8ee774cfd00c2199ab678'
+      image: '/activities/baksos.jpg'
     },
     {
       title: 'Pemasangan Lampion',
       description: 'Tradisi memasang lampion sebagai simbol penerangan kebijaksanaan dan kebahagiaan universal.',
-      image: 'https://z-cdn-media.chatglm.cn/files/222f5294-0244-4ede-b4f9-df070d9639df_lampion.jpg?auth_key=1864058688-b668eefbd9a8481f8065b201d8ae39ae-0-78a01823caf36705632362d7458a252c'
+      image: '/activities/lampion.jpg'
     }
   ]
 
