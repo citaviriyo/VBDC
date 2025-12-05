@@ -11,7 +11,7 @@ export default function Beranda() {
         {/* Background foto tampak depan vihara */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('https://z-cdn-media.chatglm.cn/files/b68ff60e-8a46-46d2-a25d-937549dd68be_hero.jpg?auth_key=1864058688-bff47e9566d84d87927c5373e761b1e4-0-ee54501342fc66980b7796cb8cb81e96')" }}
+          style={{ backgroundImage: "url('/hero/hero.jpg')" }}
         />
         {/* Overlay gelap tipis */}
         <div className="absolute inset-0 bg-black/40" />
@@ -54,7 +54,7 @@ export default function Beranda() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="w-full h-64">
                 <img 
-                  src="https://z-cdn-media.chatglm.cn/files/564e0350-d79a-4bd5-83b7-bdd1ce845d55_waisak.jpg?auth_key=1864058688-f419dfd080934447aecc8633418c08ee-0-891e3425e1ff599df7160d8e435e90ad"
+                  src="/activities/waisak.jpg"
                   alt="Waisak Puja"
                   className="w-full h-full object-cover object-center"
                 />
@@ -72,7 +72,7 @@ export default function Beranda() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="w-full h-64">
                 <img 
-                  src="https://z-cdn-media.chatglm.cn/files/27600308-fdea-4b16-a9fc-1de2903f308c_kathina.jpg?auth_key=1864058688-dede204a4fce4d0da516e8d2c79de412-0-fc76203aa0578bf383a416125201f964"
+                  src="/activities/kathina.jpg"
                   alt="Kathina"
                   className="w-full h-full object-cover object-center"
                 />
@@ -90,7 +90,7 @@ export default function Beranda() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="w-full h-64">
                 <img 
-                  src="https://z-cdn-media.chatglm.cn/files/e4d4cf19-43a5-494c-a39a-9c6c5ace3eb9_baksos.jpg?auth_key=1864058688-8eb3b96dfd134cb3941feac2e32968d7-0-468d92f8c1b8ee774cfd00c2199ab678"
+                  src="/activities/baksos.jpg"
                   alt="Bakti Sosial"
                   className="w-full h-full object-cover object-center"
                 />
