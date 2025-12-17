@@ -13,7 +13,7 @@ export default function Kontak() {
           {/* Logo */}
           <div className="w-20 h-20 mx-auto mb-6 flex items-center justify-center">
             <img 
-              src="https://z-cdn-media.chatglm.cn/files/1b0e9596-1f2a-4e10-99eb-cd854c9fe890_logo%20vbdc.png?auth_key=1864058688-be79ca02eb584e29a49158e278be615b-0-2e9acf7b4a82f93a48dfaa932467e856" 
+              src="vbdc-logo.PNG" 
               alt="Vihara Buddha Dharma Citaviriyo" 
               className="w-full h-full object-contain"
             />
