@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 flex items-center justify-center">
                 <img 
-                  src="/vbdc-logo.png" 
+                  src="/vbdc-logo.PNG" 
                   alt="Vihara Buddha Dharma Citaviriyo" 
                   className="w-full h-full object-contain"
                 />
