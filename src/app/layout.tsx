@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   keywords: ["Vihara Buddha Dharma Citaviriyo", "Yayasan Vihara", "VBDC", "vihara buddhis", "kegiatan keagamaan Buddhis","pendidikan Dhamma", "donasi yayasan"],
   authors: [{ name: "Yayasan Vihara Buddha Dharma Citaviriyo"  }],
   icons: {
-  icon: "/vbdc-logo.PNG",
+  icon: "/vbdc-logo.png",
 },
 
     
