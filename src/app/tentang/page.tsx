@@ -41,7 +41,7 @@ export default function Tentang() {
           {/* Logo */}
           <div className="w-20 h-20 mx-auto mb-6 flex items-center justify-center">
             <img 
-              src="/vbdc-logo.png" 
+              src="/vbdc-logo.PNG" 
               alt="Vihara Buddha Dharma Citaviriyo" 
               className="w-full h-full object-contain"
             />
