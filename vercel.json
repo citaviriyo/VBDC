@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.vbdc.or.id"
+        }
+      ],
+      "destination": "https://vbdc.or.id/$1",
+      "permanent": true
+    }
+  ]
+}
