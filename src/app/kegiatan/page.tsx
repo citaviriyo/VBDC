@@ -1,5 +1,5 @@
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import Navbar from '@/components/layout/Navbar'
+import Footer from '@/components/layout/Footer'
 
 export default function Kegiatan() {
   const activities = [
@@ -124,3 +124,4 @@ export default function Kegiatan() {
     </div>
   )
 }
+
