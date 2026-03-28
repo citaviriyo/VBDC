@@ -4,6 +4,21 @@ import Image from 'next/image'
 import { MapPin, Mail, Phone, Clock } from 'lucide-react'
 import { contactItems, kontakPageContent, mapEmbedUrl } from '@/data/kontak'
 
+export const metadata = {
+  title: 'Kontak Vihara Buddha Dharma Citaviriyo (VBDC)',
+  description:
+    'Temukan informasi kontak Vihara Buddha Dharma Citaviriyo, termasuk alamat, email, telepon, jam operasional, dan lokasi vihara.',
+  openGraph: {
+    title: 'Kontak Vihara Buddha Dharma Citaviriyo (VBDC)',
+    description:
+      'Hubungi Vihara Buddha Dharma Citaviriyo melalui informasi alamat, email, telepon, dan peta lokasi untuk memudahkan kunjungan Anda.',
+    url: 'https://vbdc.or.id/kontak',
+    siteName: 'Vihara Buddha Dharma Citaviriyo',
+    locale: 'id_ID',
+    type: 'website',
+  },
+}
+
 const contactIcons = [MapPin, Mail, Phone, Clock]
 
 export default function Kontak() {

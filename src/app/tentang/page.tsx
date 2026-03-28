@@ -3,6 +3,21 @@ import Footer from '@/components/layout/Footer'
 import Image from 'next/image'
 import { developmentPlans, mainActivities, tentangContent } from '@/data/tentang'
 
+export const metadata = {
+  title: 'Tentang Vihara Buddha Dharma Citaviriyo (VBDC)',
+  description:
+    'Pelajari profil Vihara Buddha Dharma Citaviriyo, nilai-nilai yang dijunjung, kegiatan utama, dan arah pengembangan untuk pelayanan umat.',
+  openGraph: {
+    title: 'Tentang Vihara Buddha Dharma Citaviriyo (VBDC)',
+    description:
+      'Kenali lebih dekat Vihara Buddha Dharma Citaviriyo melalui informasi profil, kegiatan utama, serta rencana pengembangan vihara.',
+    url: 'https://vbdc.or.id/tentang',
+    siteName: 'Vihara Buddha Dharma Citaviriyo',
+    locale: 'id_ID',
+    type: 'website',
+  },
+}
+
 export default function Tentang() {
   return (
     <div className="min-h-screen bg-white">
