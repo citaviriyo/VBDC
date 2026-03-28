@@ -14,6 +14,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const organizationStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "ReligiousOrganization",
+  "@id": "https://vbdc.or.id/#organization",
+  name: "Vihara Buddha Dharma Citaviriyo",
+  url: "https://vbdc.or.id",
+  logo: "https://vbdc.or.id/vbdc-logo.PNG",
+  description: "Vihara Buddha Dharma Citaviriyo adalah tempat ibadah dan pembelajaran Dhamma.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Komplek Toho Blok N1 & N3",
+    addressLocality: "Jakarta Utara",
+    addressRegion: "Jakarta",
+    postalCode: "14470",
+    addressCountry: "ID",
+  },
+  areaServed: "Indonesia",
+  telephone: "+6281287866663",
+  email: "info@vbdc.or.id",
+};
+
 export const metadata: Metadata = {
   title: "Yayasan Vihara Buddha Dharma Citaviriyo (VBDC)",
   description: "Yayasan Vihara Buddha Dharma Citaviriyo adalah lembaga keagamaan Buddhis yang menyelenggarakan kegiatan puja bakti, pendidikan Dhamma, dan pelayanan sosial bagi umat.",
@@ -49,6 +70,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationStructuredData),
+          }}
+        />
         <ScrollReveal />
         {children}
         <Toaster />
