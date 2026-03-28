@@ -1,5 +1,6 @@
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import Image from 'next/image'
 import { activities, kegiatanPageContent } from '@/data/kegiatan'
 
 export default function Kegiatan() {
@@ -11,11 +12,13 @@ export default function Kegiatan() {
       <section className="bg-gray-50 px-4 py-14 sm:px-6 sm:py-16 lg:py-20" data-reveal>
         <div className="mx-auto max-w-4xl text-center">
           {/* Logo */}
-          <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-orange-100">
-            <img
+          <div className="relative mx-auto mb-6 flex h-20 w-20 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm ring-1 ring-orange-100">
+            <Image
               src="/vbdc-logo.PNG"
               alt="Vihara Buddha Dharma Citaviriyo"
-              className="h-full w-full object-contain"
+              fill
+              className="object-contain"
+              sizes="80px"
             />
           </div>
 
@@ -41,11 +44,13 @@ export default function Kegiatan() {
                 data-reveal-delay={String(index * 65)}
               >
                 {/* Activity Image */}
-                <div className="h-56 w-full overflow-hidden sm:h-60">
-                  <img
+                <div className="relative h-56 w-full overflow-hidden sm:h-60">
+                  <Image
                     src={activity.image}
                     alt={activity.title}
-                    className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
 

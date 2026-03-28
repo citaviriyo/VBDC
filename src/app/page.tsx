@@ -1,6 +1,7 @@
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import Link from 'next/link'
+import Image from 'next/image'
 import { featuredActivities, featuredActivitiesSection, heroContent } from '@/data/beranda'
 
 export default function Beranda() {
@@ -49,11 +50,13 @@ export default function Beranda() {
                 data-reveal
                 data-reveal-delay={String(index * 70)}
               >
-                <div className="h-56 w-full overflow-hidden sm:h-60">
-                  <img
+                <div className="relative h-56 w-full overflow-hidden sm:h-60">
+                  <Image
                     src={activity.image}
                     alt={activity.title}
-                    className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    fill
+                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
                 <div className="p-6 sm:p-7">

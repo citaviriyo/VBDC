@@ -1,5 +1,6 @@
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
+import Image from 'next/image'
 import { developmentPlans, mainActivities, tentangContent } from '@/data/tentang'
 
 export default function Tentang() {
@@ -11,11 +12,13 @@ export default function Tentang() {
       <section className="bg-gray-50 px-4 py-14 sm:px-6 sm:py-16 lg:py-20" data-reveal>
         <div className="mx-auto max-w-4xl text-center">
           {/* Logo */}
-          <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-orange-100">
-            <img
+          <div className="relative mx-auto mb-6 flex h-20 w-20 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm ring-1 ring-orange-100">
+            <Image
               src="/vbdc-logo.PNG"
               alt="Vihara Buddha Dharma Citaviriyo"
-              className="h-full w-full object-contain"
+              fill
+              className="object-contain"
+              sizes="80px"
             />
           </div>
 

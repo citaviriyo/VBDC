@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -30,11 +31,13 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between sm:h-20">
           {/* Logo dan Nama Vihara */}
           <div className="flex items-center space-x-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-orange-100 sm:h-11 sm:w-11">
-              <img
+            <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm ring-1 ring-orange-100 sm:h-11 sm:w-11">
+              <Image
                 src="/vbdc-logo.PNG"
                 alt="Vihara Buddha Dharma Citaviriyo"
-                className="h-full w-full object-contain"
+                fill
+                className="object-contain"
+                sizes="44px"
               />
             </div>
             <div className="hidden sm:block">

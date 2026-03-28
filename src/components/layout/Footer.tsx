@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function Footer() {
   const [currentYear] = useState(new Date().getFullYear())
@@ -13,11 +14,13 @@ export default function Footer() {
           {/* Kolom 1: Nama Yayasan + Deskripsi */}
           <div className="space-y-5">
             <div className="flex items-center space-x-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/95 shadow-sm ring-1 ring-white/30">
-                <img
+              <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white/95 shadow-sm ring-1 ring-white/30">
+                <Image
                   src="/vbdc-logo.PNG"
                   alt="Vihara Buddha Dharma Citaviriyo"
-                  className="h-full w-full object-contain"
+                  fill
+                  className="object-contain"
+                  sizes="48px"
                 />
               </div>
               <h3 className="text-xl font-semibold leading-tight tracking-tight">Vihara Buddha Dharma Citaviriyo</h3>
