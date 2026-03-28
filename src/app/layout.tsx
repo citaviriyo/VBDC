@@ -36,27 +36,33 @@ const organizationStructuredData = {
 };
 
 export const metadata: Metadata = {
-  title: "Yayasan Vihara Buddha Dharma Citaviriyo (VBDC)",
-  description: "Yayasan Vihara Buddha Dharma Citaviriyo adalah lembaga keagamaan Buddhis yang menyelenggarakan kegiatan puja bakti, pendidikan Dhamma, dan pelayanan sosial bagi umat.",
-  keywords: ["Vihara Buddha Dharma Citaviriyo", "Yayasan Vihara", "VBDC", "vihara buddhis", "kegiatan keagamaan Buddhis","pendidikan Dhamma", "donasi yayasan"],
-  authors: [{ name: "Yayasan Vihara Buddha Dharma Citaviriyo"  }],
-  icons: {
-  icon: "/vbdc-logo.PNG",
-},
+  title: "Yayasan Buddha Dharma Citaviriyo (VBDC) - Jakarta",
+  description:
+    "Informasi vihara, kegiatan keagamaan Buddhis, pendidikan Dhamma, dan program pelayanan sosial di Jakarta.",
 
-    
-  
   openGraph: {
-    title: "Yayasan Vihara Buddha Dharma Citaviriyo (VBDC)",
-    description: "Informasi vihara, kegiatan keagamaan Buddhis, pendidikan Dhamma, dan program pelayanan sosial Yayasan Vihara Buddha Dharma Citaviriyo.",
+    title: "Yayasan Buddha Dharma Citaviriyo (VBDC)",
+    description:
+      "Tempat ibadah, pembelajaran Dhamma, dan kegiatan sosial di Jakarta.",
     url: "https://vbdc.or.id",
     siteName: "VBDC",
+    locale: "id_ID",
     type: "website",
+    images: [
+      {
+        url: "https://vbdc.or.id/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Vihara Buddha Dharma Citaviriyo",
+      },
+    ],
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Yayasan Vihara Buddha Dharma Citaviriyo (VBDC)",
-    description: "Website resmi Yayasan Vihara Buddha Dharma Citaviriyo berisi jadwal puja bakti, kegiatan vihara, dan informasi layanan umat.",
+    title: "Vihara Buddha Dharma Citaviriyo",
+    description: "Tempat ibadah dan pembelajaran Dhamma di Jakarta.",
+    images: ["https://vbdc.or.id/og-image.jpg"],
   },
 };
 
