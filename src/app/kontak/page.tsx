@@ -11,49 +11,54 @@ export default function Kontak() {
       <Navbar />
 
       {/* Header Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="bg-gray-50 px-4 py-14 sm:px-6 sm:py-16 lg:py-20" data-reveal>
+        <div className="mx-auto max-w-4xl text-center">
           {/* Logo */}
-          <div className="w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+          <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-orange-100">
             <img
-              src="vbdc-logo.PNG"
+              src="/vbdc-logo.PNG"
               alt="Vihara Buddha Dharma Citaviriyo"
-              className="w-full h-full object-contain"
+              className="h-full w-full object-contain"
             />
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+          <h1 className="mb-6 text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl md:text-5xl">
             {kontakPageContent.title}
           </h1>
 
-          <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+          <p className="mx-auto max-w-3xl text-base leading-relaxed text-gray-600 sm:text-lg">
             {kontakPageContent.description}
           </p>
         </div>
       </section>
 
       {/* Contact Information Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <section className="px-4 py-16 sm:px-6 sm:py-20 lg:py-24" data-reveal data-reveal-delay="60">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
             {/* Kolom Kiri: Informasi Kontak */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-8">
+            <div className="rounded-2xl border border-orange-100/60 bg-white p-6 shadow-md sm:p-8" data-reveal>
+              <h2 className="mb-8 text-2xl font-bold tracking-tight text-gray-800 sm:text-3xl">
                 {kontakPageContent.contactSectionTitle}
               </h2>
 
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-5">
                 {contactItems.map((item, index) => {
                   const Icon = contactIcons[index]
 
                   return (
-                    <div key={item.title} className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-6 h-6 text-orange-600" />
+                    <div
+                      key={item.title}
+                      className="flex items-start space-x-4 rounded-xl bg-orange-50/60 px-4 py-3 transition-colors duration-200 hover:bg-orange-100/70"
+                      data-reveal
+                      data-reveal-delay={String(index * 60)}
+                    >
+                      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-orange-100">
+                        <Icon className="h-6 w-6 text-orange-600" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-gray-800 mb-1">{item.title}</h3>
-                        <p className="text-gray-600">
+                        <h3 className="mb-1 text-base font-semibold text-gray-800 sm:text-lg">{item.title}</h3>
+                        <p className="text-sm text-gray-600 sm:text-base">
                           {item.lines.map((line, lineIndex) => (
                             <span key={lineIndex}>
                               {line}
@@ -69,17 +74,17 @@ export default function Kontak() {
             </div>
 
             {/* Kolom Kanan: Lokasi Kami */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-8">
+            <div className="rounded-2xl border border-orange-100/60 bg-white p-6 shadow-md sm:p-8" data-reveal data-reveal-delay="70">
+              <h2 className="mb-8 text-2xl font-bold tracking-tight text-gray-800 sm:text-3xl">
                 {kontakPageContent.locationSectionTitle}
               </h2>
 
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="mb-6 text-base leading-relaxed text-gray-600 sm:text-lg">
                 {kontakPageContent.locationDescription}
               </p>
 
               {/* Google Maps Embed */}
-              <div style={{ width: '100%', height: '350px', borderRadius: '12px', overflow: 'hidden' }}>
+              <div className="h-[300px] w-full overflow-hidden rounded-xl ring-1 ring-orange-100 sm:h-[350px]">
                 <iframe
                   src={mapEmbedUrl}
                   width="100%"
@@ -91,8 +96,8 @@ export default function Kontak() {
                 ></iframe>
               </div>
 
-              <div className="mt-6 p-4 bg-orange-50 rounded-lg">
-                <p className="text-sm text-orange-700">
+              <div className="mt-6 rounded-xl bg-orange-50 p-4 ring-1 ring-orange-100">
+                <p className="text-sm text-orange-700 sm:text-base">
                   <strong>Petunjuk:</strong> {kontakPageContent.directions}
                 </p>
               </div>
@@ -102,18 +107,18 @@ export default function Kontak() {
       </section>
 
       {/* Kunjungi Kami Section */}
-      <section className="py-20 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+      <section className="bg-gray-50 px-4 py-16 sm:px-6 sm:py-20 lg:py-24" data-reveal data-reveal-delay="90">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="mb-8 text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl md:text-5xl">
             {kontakPageContent.visitTitle}
           </h2>
 
-          <div className="bg-white rounded-lg shadow-lg p-12">
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed max-w-2xl mx-auto">
+          <div className="rounded-2xl border border-orange-100/60 bg-white p-8 shadow-md sm:p-10 md:p-12">
+            <p className="mx-auto mb-8 max-w-2xl text-base leading-relaxed text-gray-700 sm:text-lg">
               {kontakPageContent.visitDescription}
             </p>
 
-            <p className="text-2xl text-orange-500 font-serif italic">
+            <p className="text-2xl font-serif italic text-orange-500 sm:text-3xl">
               {kontakPageContent.visitQuote}
             </p>
           </div>

@@ -8,51 +8,53 @@ export default function Kegiatan() {
       <Navbar />
 
       {/* Header Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="bg-gray-50 px-4 py-14 sm:px-6 sm:py-16 lg:py-20" data-reveal>
+        <div className="mx-auto max-w-4xl text-center">
           {/* Logo */}
-          <div className="w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+          <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-orange-100">
             <img
               src="/vbdc-logo.PNG"
               alt="Vihara Buddha Dharma Citaviriyo"
-              className="w-full h-full object-contain"
+              className="h-full w-full object-contain"
             />
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+          <h1 className="mb-6 text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl md:text-5xl">
             {kegiatanPageContent.title}
           </h1>
 
-          <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+          <p className="mx-auto max-w-3xl text-base leading-relaxed text-gray-600 sm:text-lg">
             {kegiatanPageContent.description}
           </p>
         </div>
       </section>
 
       {/* Grid Kegiatan Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="px-4 py-16 sm:px-6 sm:py-20 lg:py-24" data-reveal data-reveal-delay="60">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 gap-6 sm:gap-7 md:grid-cols-2 lg:grid-cols-3">
             {activities.map((activity, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105"
+                className="group overflow-hidden rounded-2xl border border-orange-100/60 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                data-reveal
+                data-reveal-delay={String(index * 65)}
               >
                 {/* Activity Image */}
-                <div className="w-full h-64">
+                <div className="h-56 w-full overflow-hidden sm:h-60">
                   <img
                     src={activity.image}
                     alt={activity.title}
-                    className="w-full h-full object-cover object-center"
+                    className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
 
                 {/* Content */}
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                <div className="p-6 sm:p-7">
+                  <h3 className="mb-3 text-xl font-semibold tracking-tight text-gray-800">
                     {activity.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">{activity.description}</p>
+                  <p className="text-base leading-relaxed text-gray-600">{activity.description}</p>
                 </div>
               </div>
             ))}
@@ -61,17 +63,17 @@ export default function Kegiatan() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-orange-50">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+      <section className="bg-orange-50 px-4 py-14 sm:px-6 sm:py-16 lg:py-20" data-reveal data-reveal-delay="90">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="mb-8 text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl md:text-5xl">
             {kegiatanPageContent.ctaTitle}
           </h2>
 
-          <div className="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+          <div className="mx-auto max-w-2xl rounded-2xl border border-orange-100 bg-white p-7 shadow-md sm:p-8">
+            <p className="mb-6 text-base leading-relaxed text-gray-700 sm:text-lg">
               {kegiatanPageContent.ctaDescription}
             </p>
-            <p className="text-2xl text-orange-500 font-serif italic">
+            <p className="text-2xl font-serif italic text-orange-500 sm:text-3xl">
               {kegiatanPageContent.ctaQuote}
             </p>
           </div>
